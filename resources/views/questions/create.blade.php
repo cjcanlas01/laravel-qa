@@ -39,7 +39,7 @@
                         @endif
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-outline-primary btn-lg">Ask this Question</button>
+                            <button type="submit" class="btn btn-outline-primary btn-lg">Ask this Question</button>
                         </div>
                     </form>
                 </div>                
