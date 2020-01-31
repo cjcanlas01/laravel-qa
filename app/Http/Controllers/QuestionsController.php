@@ -41,10 +41,9 @@ class QuestionsController extends Controller
     public function store(AskQuestionRequest $request)
     {
 
-        return $errors;
-        // $request->user()->questions()->create($request->all());
+        $request->user()->questions()->create($request->all());
 
-        // return redirect()->route('questions.index')->with(['success' => "Your question has been submitted"]);
+        return redirect()->route('questions.index')->with(['success' => "Your question has been submitted"]);
     }
 
     /**
@@ -66,7 +65,7 @@ class QuestionsController extends Controller
      */
     public function edit(Question $question)
     {
-        //
+        return view('questions.edit', compact('question'));
     }
 
     /**
@@ -76,9 +75,11 @@ class QuestionsController extends Controller
      * @param  \App\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Question $question)
+    public function update(AskQuestionRequest $request, Question $question)
     {
-        //
+        $question->update($request->all());
+        
+        return redirect('/questions')->with('success', 'Your Question has been updated');
     }
 
     /**
