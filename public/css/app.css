@@ -11395,3 +11395,15 @@ form.form-delete {
   display: inline;
 }
 
+.vote-controls {
+  min-width: 60px;
+  margin-right: 30px;
+  text-align: center;
+  color: #495057;
+}
+
+.vote-controls span,
+.vote-controls a {
+  display: block;
+}
+
