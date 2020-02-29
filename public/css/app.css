@@ -11407,3 +11407,30 @@ form.form-delete {
   display: block;
 }
 
+.vote-controls span.votes-coount {
+  font-size: 25px;
+}
+
+.vote-controls span.favorites-count {
+  font-size: 12px;
+}
+
+.vote-controls a {
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.vote-controls a.off,
+.vote-controls a.off:hover {
+  color: #adb5bd;
+}
+
+.vote-controls a.favorite.favorited,
+.vote-controls a.favorite.favorited:hover {
+  color: #ffed4a;
+}
+
+.vote-controls a.vote-accepted {
+  color: #38c172;
+}
+
